@@ -18,6 +18,7 @@ public class IMC extends AppCompatActivity {
 
         Button Calcular = (Button) findViewById(R.id.btncalcular);
         peso = (EditText) findViewById(R.id.txtxpeso);
+
         altura =(EditText) findViewById(R.id.txtaltura);
 
         Calcular.setOnClickListener(new View.OnClickListener() {
