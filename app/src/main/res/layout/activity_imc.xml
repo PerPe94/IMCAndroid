@@ -8,10 +8,45 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.diego.imc.IMC">
+    android:background="@android:drawable/btn_default_small">
 
-    <TextView
+    <Button
+        android:text="Calcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_marginTop="52dp"
+        android:id="@+id/btncalcular"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/txtaltura"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/background_light" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Introduzca su peso"
+        android:ems="10"
+        android:layout_marginTop="65dp"
+        android:id="@+id/txtxpeso"
+        android:background="@android:drawable/alert_light_frame"
+        android:textColor="?attr/colorControlNormal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Introduzca su estatura"
+        android:ems="10"
+        android:id="@+id/txtaltura"
+        android:background="@android:drawable/alert_light_frame"
+        android:textColor="?attr/colorControlNormal"
+        android:layout_below="@+id/txtxpeso"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="24dp"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
